@@ -12,5 +12,6 @@ public class MathFunctions {
         // int b = scanner.nextInt();
         double c = Math.min(a, b);
         System.out.println("Min = " + c);
+        scanner.close();
     }
 }
