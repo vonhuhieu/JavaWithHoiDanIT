@@ -3,6 +3,18 @@ package ConditionalFunction;
 import java.util.Scanner;
 
 public class Lab2 {
+    public static void giaiphuongtrinhbacnhat(int a, int b) {
+        if (a == 0) {
+            if (b == 0) {
+                System.out.println("Phương trình vô số nghiệm");
+            } else {
+                System.out.println("Phương trình vô nghiệm");
+            }
+        } else {
+            System.out.printf("Phương trình có nghiệm duy nhất là x = %.2f", -(double) b / a);
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Giải phương trình: ax^2 + bx + c = 0");
@@ -13,15 +25,7 @@ public class Lab2 {
         System.out.println("Mời nhập số nguyên c: ");
         int c = scanner.nextInt();
         if (a == 0) {
-            if (b == 0) {
-                if (c == 0) {
-                    System.out.println("Phương trình vô số nghiệm");
-                } else {
-                    System.out.println("Phương trình vô nghiệm");
-                }
-            } else {
-                System.out.printf("Phương trình có nghiệm x = %.2f", -((double) c / b));
-            }
+            giaiphuongtrinhbacnhat(b, c);
         } else {
             double delta = b * b - 4 * a * c;
             if (delta < 0) {
