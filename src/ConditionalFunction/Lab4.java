@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class Lab4 {
     public static final Scanner scanner = new Scanner(System.in);
 
-    public static void giaiphuongtrinhbacnhat() {
-        System.out.println("Mời nhập số nguyên a: ");
-        int a = scanner.nextInt();
-        System.out.println("Mời nhập số nguyên b: ");
-        int b = scanner.nextInt();
+    public static void congthucgiaiphuongtrinhbacnhat(int a, int b) {
         if (a == 0) {
             if (b == 0) {
                 System.out.println("Phương trình vô số nghiệm");
@@ -21,6 +17,14 @@ public class Lab4 {
         }
     }
 
+    public static void giaiphuongtrinhbacnhat() {
+        System.out.println("Mời nhập số nguyên a: ");
+        int a = scanner.nextInt();
+        System.out.println("Mời nhập số nguyên b: ");
+        int b = scanner.nextInt();
+        congthucgiaiphuongtrinhbacnhat(a , b);
+    }
+
     public static void giaiphuongtrinhbachai() {
         System.out.println("Giải phương trình: ax^2 + bx + c = 0");
         System.out.println("Mời nhập số nguyên a: ");
@@ -30,15 +34,7 @@ public class Lab4 {
         System.out.println("Mời nhập số nguyên c: ");
         int c = scanner.nextInt();
         if (a == 0) {
-            if (b == 0) {
-                if (c == 0) {
-                    System.out.println("Phương trình vô số nghiệm");
-                } else {
-                    System.out.println("Phương trình vô nghiệm");
-                }
-            } else {
-                System.out.printf("Phương trình có nghiệm x = %.2f", -((double) c / b));
-            }
+            congthucgiaiphuongtrinhbacnhat(b, c);
         } else {
             double delta = b * b - 4 * a * c;
             if (delta < 0) {
