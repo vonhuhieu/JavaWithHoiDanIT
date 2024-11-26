@@ -2,8 +2,8 @@ package Class_Object;
 
 public class Student {
     // class attributes
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     // constructor
     public Student(String name, int age) {
@@ -11,6 +11,32 @@ public class Student {
         this.age = age;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+//    public String getName(){
+//        return this.name;
+//    }
+//
+//    public int getAge(){
+//        return this.age;
+//    }
+//
+//    public void setName(String name1){
+//        this.name = name1;
+//    }
     // để định nghĩa phương thức cần quan tâm kiểu giá trị trả về của nó
     public void displayInfo() {
         System.out.println("My name is " + this.name + " and I am " + this.age + " years old");
