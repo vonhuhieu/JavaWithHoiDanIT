@@ -21,6 +21,7 @@ public class ListStudents {
         System.out.println("Danh sách học sinh: " + studentsList);
         System.out.println("Danh sách học sinh có họ Nguyễn: ");
         for (int i = 0; i < studentsList.size(); ++i) {
+            // kiểm tra chuỗi bắt đầu bằng gì
             if(studentsList.get(i).getName().startsWith("Nguyễn")){
                 System.out.println(studentsList.get(i));
             }
