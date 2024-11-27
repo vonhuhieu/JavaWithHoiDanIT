@@ -34,6 +34,7 @@ public class TinhDiemTB {
         SinhVien diemTBSinhVienCoKhi = new SinhVienCoKhi(id, name, scoreCNC, scoreLPC);
         System.out.println("ID: " + diemTBSinhVienCoKhi.id);
         System.out.println("Name: " + diemTBSinhVienCoKhi.name);
+        // dùng biến có kiểm dữ liệu SinhVien là kiểu dữ liệu tham chiếu để gọi phương thức getDiem() -> tính đa hình
         diemTBSinhVienCoKhi.getDiem();
     }
 
