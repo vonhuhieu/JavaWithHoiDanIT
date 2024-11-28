@@ -22,18 +22,6 @@ public class Product2 {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public double getTax() {
-        return tax;
-    }
-
-    public void setTax(double tax) {
-        this.tax = tax;
-    }
-
     public double getTaxPrice(){
         return this.tax * this.price;
     }

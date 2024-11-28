@@ -9,16 +9,9 @@ public class Lab1 {
 
         // laays ngày tháng năm hiện tại
         int namhientai = cal.get(Calendar.YEAR);
-        int thanghientai = cal.get(Calendar.MONTH);
-        thanghientai += 1;
-        int ngayhientai = cal.get(Calendar.DAY_OF_MONTH);
 
         // nhập vào ngày tháng năm sinh
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Mời nhập ngày sinh: ");
-        int ngaysinh = scanner.nextInt();
-        System.out.println("Mời nhập tháng sinh: ");
-        int thangsinh = scanner.nextInt();
         System.out.println("Mời nhập năm sinh: ");
         int namsinh = scanner.nextInt();
 
